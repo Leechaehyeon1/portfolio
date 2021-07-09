@@ -1,0 +1,260 @@
+:root {
+  --main_color :#f5c214;
+}
+.main_vis {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.main_vis .sub_txt {
+  position: absolute;
+  -webkit-text-stroke: 1px #fff;
+  writing-mode: tb;
+  font-size: 2vw;
+  font-weight: 900;
+  color: transparent;
+  letter-spacing: 5vh;
+  padding: 10px;
+}
+.main_vis .sub_txt.sub01 {
+  top: 0;
+  left: 0;
+}
+.main_vis .sub_txt.sub02 {
+  bottom: 0;
+  right: 0;
+}
+.main_vis h1 {
+  padding: 0 10vw;
+  font-size: 11vw;
+  font-weight: 700;
+  position: relative;
+  transform: skewX(-10deg);
+}
+.main_vis h1::before {
+  content: 'PORTFOLIO PUBLISHER';
+  display: block;
+  position: absolute;
+  top: -9vw;
+  left: 0;
+  -webkit-text-stroke: 1px #454545;
+  color: transparent;
+  white-space: nowrap;
+  transform: skewX(-10deg);
+}
+.main_vis h1::after {
+  content: 'PUBLISHER';
+  display: block;
+  position: absolute;
+  bottom: -9vw;
+  right: 0;
+  -webkit-text-stroke: 1px #454545;
+  color: transparent;
+  white-space: nowrap;
+  transform: skewX(-10deg);
+}
+.main_vis h1 span {
+  display: block;
+}
+.main_vis h1 span.main_txt02 {
+  text-align: right;
+}
+.main_vis h1 span.main_txt03 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: right;
+}
+.intro {
+  padding: 150px 0;
+}
+.intro .wrap {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+}
+.intro .wrap h2,
+.intro .wrap p {
+  width: 50%;
+  padding: 0 20px
+}
+.intro .wrap h2 {
+  font-size: 28px;
+  line-height: 1.5;
+}
+.intro .wrap h2 em {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+}
+.intro .wrap h2 em::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--main_color);
+}
+.intro .wrap h2 em span {
+  position: relative;
+}
+.intro .wrap p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.works .work {
+  overflow: hidden;
+  border-radius: 10px;
+  transform: scale(0.9);
+  position: relative;
+}
+.works .sub_txt01 {
+  z-index: 1;
+  position: absolute;
+  writing-mode: tb;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  letter-spacing: 5px;
+}
+.works .sub_txt02 {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 5px;
+}
+.works .img_wrap {
+  position: relative;
+  padding-bottom: 50%;
+}
+.works .img_wrap::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+}
+.works .img_wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.works .txt_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.works .txt_wrap h3 {
+  font-size: 88px;
+  font-weight: 500;
+}
+.works .icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px 0;
+}
+.works .icon i {
+  vertical-align: top;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 5px;
+  box-shadow: 0px 0px 0px 0px rgb(43 43 43 / 47%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 0;
+  border-right: 0;
+}
+.works .icon i .pop {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(30%);
+  padding: 8px 10px;
+  color: #121212;
+  background: #fff;
+  white-space: nowrap;
+  font-size: 12px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px 2px rgb(43 43 43 / 47%);
+  color: #4c4c4c;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+.works .icon i:hover .pop {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0%);
+}
+.works .icon i.con01 {
+  background: rgba(0,0,0,0.2) url(../img/scroll_masic_icon.png) no-repeat center;
+  background-size: 20px;
+}
+.works .icon i.con02 {
+  background: rgba(0,0,0,0.2) url(../img/tweenmax_icon.png) no-repeat center;
+  background-size: 20px;
+}
+.works .icon i.con03 {
+  background: rgba(0,0,0,0.2) url(../img/jquery_icon.png) no-repeat center;
+  background-size: 20px;
+}
+.works .icon i.con04 {
+  background: rgba(0,0,0,0.2) url(../img/html_icon.png) no-repeat center;
+  background-size: 20px;
+}
+.works .icon i.con05 {
+  background: rgba(0,0,0,0.2) url(../img/css_icon.png) no-repeat center;
+  background-size: 20px;
+}
+.works .icon i.con06 {
+  background: rgba(0,0,0,0.2) url(../img/javascript_icon.png) no-repeat center;
+  background-size: 20px;
+}
+
+.works .work02 .txt_wrap a.more {
+  border: 1px solid #889999;
+}
+
+.works .txt_wrap a.more {
+  width: 180px;
+  height: 60px;
+  margin-top: 31px;
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50px;
+  backdrop-filter: blur(6px);
+  border: 1px solid #b4b6af;
+  line-height: 60px;
+  font-weight: 500;
+}
+.works .txt_wrap a.more i {
+  display: inline-block;
+  margin-top: 2px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .works .img_wrap {
+    padding-bottom: 100%;
+  }
+}
