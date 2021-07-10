@@ -8,7 +8,7 @@ $(document).ready(function(){
       $(this).removeClass('on');
       $('body').addClass('leave');
       TweenMax.staggerTo('.gnb a', 0.5,
-      { y: '100%', },
+      { y: '100%' },
         0.2
       );
     } else {
@@ -23,12 +23,13 @@ $(document).ready(function(){
   
   $('.gnb a').on('click', function(e){
     e.preventDefault();
+
     $('.gnb a').removeClass('on');
     $(this).addClass('on');
     var curr = $('.container').scrollTop();
     var target = $(this).data('target');
-    var total = $('.'+target).offset().top + curr
-    $('.container').animate({scrollTop: total}, 300)
+    var total = $('.'+target).offset().top + curr;
+    $('.container').animate({scrollTop: total}, 300);
   });
 
 });

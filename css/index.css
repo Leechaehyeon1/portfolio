@@ -225,10 +225,10 @@
   background: rgba(0,0,0,0.2) url(../img/css_icon.png) no-repeat center;
   background-size: 20px;
 }
-.works .icon i.con06 {
+/* .works .icon i.con06 {
   background: rgba(0,0,0,0.2) url(../img/javascript_icon.png) no-repeat center;
   background-size: 20px;
-}
+} */
 
 .works .work02 .txt_wrap a.more {
   border: 1px solid #889999;

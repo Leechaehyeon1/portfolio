@@ -14,8 +14,8 @@ body {
 
 body.on .container {
   transform: translateX(-5vw) scale(.7);
-    transform-origin: left center;
-    overflow: hidden;
+  transform-origin: left center;
+  overflow: hidden;
   transition: 1s 0.5s;
 }
 body.leave .container {
