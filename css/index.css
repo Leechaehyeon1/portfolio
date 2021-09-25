@@ -226,22 +226,12 @@
   background: rgba(0,0,0,0.2) url(../img/tweenmax_icon.png) no-repeat center;
   background-size: 20px;
 }
-.works .icon i.con06 {
-  background: rgba(0,0,0,0.2) url(../img/javascript_icon.png) no-repeat center;
-  background-size: 20px;
-}
 
 .works .work02 .txt_wrap a.more {
   border: 1px solid #889999;
 }
 .works .work03 .txt_wrap a.more {
   border: 1px solid #838594;
-}
-.works .work04 .txt_wrap a.more {
-  border: 1px solid #fefefe;
-}
-.works .work05 .txt_wrap a.more {
-  border: 1px solid #1a1a25;
 }
 
 .works .txt_wrap a.more {
