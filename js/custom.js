@@ -44,9 +44,9 @@ $(document).ready(function(){
   menuTab.on('click', function(e){
     e.preventDefault();
 
-    menuTab.children('a').removeClass('on');
-    
     let i = $(this).index();
+
+    menuTab.children('a').removeClass('on');
     $(this).children('a').addClass('on');
     
     let curr = $('.container').scrollTop();
@@ -58,7 +58,7 @@ $(document).ready(function(){
   // scroll gnb toggl class event
   $('.container').on('scroll', function(){
     $('.container .section').each(function(){
-      if($(this).offset().top <= $(window).scrollTop()){
+      if($(this).offset().top <= ($(window).scrollTop() + 170)){
         let i = $(this).index();
 
       menuTab.children('a').removeClass('on');
