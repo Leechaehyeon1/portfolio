@@ -58,11 +58,11 @@ $(document).ready(function(){
   // scroll gnb toggl class event
   $('.container').on('scroll', function(){
     $('.container .section').each(function(){
-      if($(this).offset().top <= ($(window).scrollTop() + 170)){
+      if($(this).offset().top <= ($(window).scrollTop() + 190)){
         let i = $(this).index();
 
-      menuTab.children('a').removeClass('on');
-      menuTab.eq(i).children('a').addClass('on');
+        menuTab.children('a').removeClass('on');
+        menuTab.eq(i).children('a').addClass('on');
       }
     });
   });
